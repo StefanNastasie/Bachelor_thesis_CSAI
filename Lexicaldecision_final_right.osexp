@@ -1,0 +1,1101 @@
+---
+API: 2.1
+Description: A simple word/ nonword categorization
+OpenSesame: 3.3.14
+Platform: nt
+Title: Lexical-decision task
+---
+set width 1920
+set uniform_coordinates no
+set title "Lexical decision_right_handed"
+set synth_backend legacy
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend xpyriment
+set keyboard_backend legacy
+set height 1080
+set fullscreen no
+set form_clicks no
+set foreground "#000000"
+set font_underline no
+set font_size 42
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:\\Users\\stefa\\OneDrive\\Documents\\UNI\\YEAR 3\\II\\Thesis\\experiments\\Lexical Decision"
+set disable_garbage_collection yes
+set description "A simple lexical-decision example experiment"
+set coordinates relative
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend xpyriment
+set bidi no
+set background "#ffffff"
+
+define notepad about_this_example
+	__note__
+	In a lexical-decision experiment, the task is to categorize letter strings on
+	some feature, such as wether they form a word (e.g. 'apple') or not
+	(e.g. 'ipple'). Usually, the goal of a lexical-decision experiment is to analyze
+	the response times to words as a function of another variable, that is, not the
+	variable that participants base their response on.
+	__end__
+	set description "A simple notepad to document your experiment. This plug-in does nothing."
+
+define loop block_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order random
+	set offset no
+	set item trial_sequence
+	set description "A single block of trials"
+	set cycles 40
+	set continuous no
+	set column_order "correct_response;target;category"
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 category word
+	setcycle 0 target acne
+	setcycle 1 category word
+	setcycle 1 target ales
+	setcycle 2 category word
+	setcycle 2 target anon
+	setcycle 3 category word
+	setcycle 3 target balm
+	setcycle 4 category word
+	setcycle 4 target bile
+	setcycle 5 category word
+	setcycle 5 target coax
+	setcycle 6 category word
+	setcycle 6 target coco
+	setcycle 7 category word
+	setcycle 7 target cogs
+	setcycle 8 category word
+	setcycle 8 target cues
+	setcycle 9 category word
+	setcycle 9 target dale
+	setcycle 10 category word
+	setcycle 10 target drab
+	setcycle 11 category word
+	setcycle 11 target dune
+	setcycle 12 category word
+	setcycle 12 target eves
+	setcycle 13 category word
+	setcycle 13 target fang
+	setcycle 14 category word
+	setcycle 14 target fern
+	setcycle 15 category word
+	setcycle 15 target flex
+	setcycle 16 category word
+	setcycle 16 target flog
+	setcycle 17 category word
+	setcycle 17 target gale
+	setcycle 18 category word
+	setcycle 18 target gill
+	setcycle 19 category word
+	setcycle 19 target glee
+	setcycle 20 category nonword
+	setcycle 20 target feen
+	setcycle 21 category nonword
+	setcycle 21 target zeel
+	setcycle 22 category nonword
+	setcycle 22 target trag
+	setcycle 23 category nonword
+	setcycle 23 target pacs
+	setcycle 24 category nonword
+	setcycle 24 target gawl
+	setcycle 25 category nonword
+	setcycle 25 target tipe
+	setcycle 26 category nonword
+	setcycle 26 target dyre
+	setcycle 27 category nonword
+	setcycle 27 target velt
+	setcycle 28 category nonword
+	setcycle 28 target pumb
+	setcycle 29 category nonword
+	setcycle 29 target anom
+	setcycle 30 category nonword
+	setcycle 30 target whem
+	setcycle 31 category nonword
+	setcycle 31 target rens
+	setcycle 32 category nonword
+	setcycle 32 target iche
+	setcycle 33 category nonword
+	setcycle 33 target pupe
+	setcycle 34 category nonword
+	setcycle 34 target lasp
+	setcycle 35 category nonword
+	setcycle 35 target fobe
+	setcycle 36 category nonword
+	setcycle 36 target purs
+	setcycle 37 category nonword
+	setcycle 37 target dred
+	setcycle 38 category nonword
+	setcycle 38 target buse
+	setcycle 39 category nonword
+	setcycle 39 target firt
+	run trial_sequence
+
+define loop block_loop_1
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order random
+	set offset no
+	set item trial_sequence
+	set description "A single block of trials"
+	set cycles 300
+	set continuous no
+	set column_order "correct_response;target;category"
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 category word
+	setcycle 0 target have
+	setcycle 1 category word
+	setcycle 1 target were
+	setcycle 2 category word
+	setcycle 2 target your
+	setcycle 3 category word
+	setcycle 3 target many
+	setcycle 4 category word
+	setcycle 4 target year
+	setcycle 5 category word
+	setcycle 5 target does
+	setcycle 6 category word
+	setcycle 6 target took
+	setcycle 7 category word
+	setcycle 7 target seen
+	setcycle 8 category word
+	setcycle 8 target week
+	setcycle 9 category word
+	setcycle 9 target held
+	setcycle 10 category word
+	setcycle 10 target ever
+	setcycle 11 category word
+	setcycle 11 target kind
+	setcycle 12 category word
+	setcycle 12 target else
+	setcycle 13 category word
+	setcycle 13 target food
+	setcycle 14 category word
+	setcycle 14 target town
+	setcycle 15 category word
+	setcycle 15 target king
+	setcycle 16 category word
+	setcycle 16 target girl
+	setcycle 17 category word
+	setcycle 17 target hair
+	setcycle 18 category word
+	setcycle 18 target hear
+	setcycle 19 category word
+	setcycle 19 target nice
+	setcycle 20 category word
+	setcycle 20 target rose
+	setcycle 21 category word
+	setcycle 21 target sale
+	setcycle 22 category word
+	setcycle 22 target sold
+	setcycle 23 category word
+	setcycle 23 target text
+	setcycle 24 category word
+	setcycle 24 target cars
+	setcycle 25 category word
+	setcycle 25 target lose
+	setcycle 26 category word
+	setcycle 26 target goal
+	setcycle 27 category word
+	setcycle 27 target grow
+	setcycle 28 category word
+	setcycle 28 target drew
+	setcycle 29 category word
+	setcycle 29 target sets
+	setcycle 30 category word
+	setcycle 30 target vast
+	setcycle 31 category word
+	setcycle 31 target lane
+	setcycle 32 category word
+	setcycle 32 target kids
+	setcycle 33 category word
+	setcycle 33 target song
+	setcycle 34 category word
+	setcycle 34 target bird
+	setcycle 35 category word
+	setcycle 35 target self
+	setcycle 36 category word
+	setcycle 36 target ward
+	setcycle 37 category word
+	setcycle 37 target sons
+	setcycle 38 category word
+	setcycle 38 target gulf
+	setcycle 39 category word
+	setcycle 39 target yard
+	setcycle 40 category word
+	setcycle 40 target hung
+	setcycle 41 category word
+	setcycle 41 target soul
+	setcycle 42 category word
+	setcycle 42 target vary
+	setcycle 43 category word
+	setcycle 43 target puts
+	setcycle 44 category word
+	setcycle 44 target flew
+	setcycle 45 category word
+	setcycle 45 target hero
+	setcycle 46 category word
+	setcycle 46 target gene
+	setcycle 47 category word
+	setcycle 47 target sing
+	setcycle 48 category word
+	setcycle 48 target guns
+	setcycle 49 category word
+	setcycle 49 target earn
+	setcycle 50 category word
+	setcycle 50 target sums
+	setcycle 51 category word
+	setcycle 51 target pond
+	setcycle 52 category word
+	setcycle 52 target disc
+	setcycle 53 category word
+	setcycle 53 target clay
+	setcycle 54 category word
+	setcycle 54 target cats
+	setcycle 55 category word
+	setcycle 55 target beef
+	setcycle 56 category word
+	setcycle 56 target pays
+	setcycle 57 category word
+	setcycle 57 target isle
+	setcycle 58 category word
+	setcycle 58 target soup
+	setcycle 59 category word
+	setcycle 59 target blew
+	setcycle 60 category word
+	setcycle 60 target lend
+	setcycle 61 category word
+	setcycle 61 target cave
+	setcycle 62 category word
+	setcycle 62 target lion
+	setcycle 63 category word
+	setcycle 63 target sang
+	setcycle 64 category word
+	setcycle 64 target tons
+	setcycle 65 category word
+	setcycle 65 target pigs
+	setcycle 66 category word
+	setcycle 66 target grid
+	setcycle 67 category word
+	setcycle 67 target lawn
+	setcycle 68 category word
+	setcycle 68 target grim
+	setcycle 69 category word
+	setcycle 69 target axis
+	setcycle 70 category word
+	setcycle 70 target fare
+	setcycle 71 category word
+	setcycle 71 target cape
+	setcycle 72 category word
+	setcycle 72 target fist
+	setcycle 73 category word
+	setcycle 73 target lung
+	setcycle 74 category word
+	setcycle 74 target cult
+	setcycle 75 category word
+	setcycle 75 target bury
+	setcycle 76 category word
+	setcycle 76 target peer
+	setcycle 77 category word
+	setcycle 77 target mini
+	setcycle 78 category word
+	setcycle 78 target bees
+	setcycle 79 category word
+	setcycle 79 target obey
+	setcycle 80 category word
+	setcycle 80 target noon
+	setcycle 81 category word
+	setcycle 81 target bred
+	setcycle 82 category word
+	setcycle 82 target lens
+	setcycle 83 category word
+	setcycle 83 target deed
+	setcycle 84 category word
+	setcycle 84 target limb
+	setcycle 85 category word
+	setcycle 85 target bald
+	setcycle 86 category word
+	setcycle 86 target peas
+	setcycle 87 category word
+	setcycle 87 target noun
+	setcycle 88 category word
+	setcycle 88 target pill
+	setcycle 89 category word
+	setcycle 89 target acre
+	setcycle 90 category word
+	setcycle 90 target mama
+	setcycle 91 category word
+	setcycle 91 target spat
+	setcycle 92 category word
+	setcycle 92 target nuns
+	setcycle 93 category word
+	setcycle 93 target heal
+	setcycle 94 category word
+	setcycle 94 target edit
+	setcycle 95 category word
+	setcycle 95 target icon
+	setcycle 96 category word
+	setcycle 96 target owls
+	setcycle 97 category word
+	setcycle 97 target lust
+	setcycle 98 category word
+	setcycle 98 target maze
+	setcycle 99 category word
+	setcycle 99 target slab
+	setcycle 100 category word
+	setcycle 100 target rift
+	setcycle 101 category word
+	setcycle 101 target bulb
+	setcycle 102 category word
+	setcycle 102 target lass
+	setcycle 103 category word
+	setcycle 103 target clan
+	setcycle 104 category word
+	setcycle 104 target swam
+	setcycle 105 category word
+	setcycle 105 target aura
+	setcycle 106 category word
+	setcycle 106 target vine
+	setcycle 107 category word
+	setcycle 107 target boar
+	setcycle 108 category word
+	setcycle 108 target weep
+	setcycle 109 category word
+	setcycle 109 target soda
+	setcycle 110 category word
+	setcycle 110 target tart
+	setcycle 111 category word
+	setcycle 111 target dove
+	setcycle 112 category word
+	setcycle 112 target font
+	setcycle 113 category word
+	setcycle 113 target mall
+	setcycle 114 category word
+	setcycle 114 target gore
+	setcycle 115 category word
+	setcycle 115 target bins
+	setcycle 116 category word
+	setcycle 116 target smug
+	setcycle 117 category word
+	setcycle 117 target aide
+	setcycle 118 category word
+	setcycle 118 target pore
+	setcycle 119 category word
+	setcycle 119 target joys
+	setcycle 120 category word
+	setcycle 120 target wasp
+	setcycle 121 category word
+	setcycle 121 target coma
+	setcycle 122 category word
+	setcycle 122 target lark
+	setcycle 123 category word
+	setcycle 123 target tact
+	setcycle 124 category word
+	setcycle 124 target soar
+	setcycle 125 category word
+	setcycle 125 target fend
+	setcycle 126 category word
+	setcycle 126 target cola
+	setcycle 127 category word
+	setcycle 127 target blob
+	setcycle 128 category word
+	setcycle 128 target mule
+	setcycle 129 category word
+	setcycle 129 target duet
+	setcycle 130 category word
+	setcycle 130 target gays
+	setcycle 131 category word
+	setcycle 131 target germ
+	setcycle 132 category word
+	setcycle 132 target axle
+	setcycle 133 category word
+	setcycle 133 target halo
+	setcycle 134 category word
+	setcycle 134 target wand
+	setcycle 135 category word
+	setcycle 135 target cram
+	setcycle 136 category word
+	setcycle 136 target judo
+	setcycle 137 category word
+	setcycle 137 target beep
+	setcycle 138 category word
+	setcycle 138 target prep
+	setcycle 139 category word
+	setcycle 139 target brat
+	setcycle 140 category word
+	setcycle 140 target pave
+	setcycle 141 category word
+	setcycle 141 target dads
+	setcycle 142 category word
+	setcycle 142 target stun
+	setcycle 143 category word
+	setcycle 143 target fuzz
+	setcycle 144 category word
+	setcycle 144 target slay
+	setcycle 145 category word
+	setcycle 145 target spam
+	setcycle 146 category word
+	setcycle 146 target sues
+	setcycle 147 category word
+	setcycle 147 target tusk
+	setcycle 148 category word
+	setcycle 148 target loin
+	setcycle 149 category word
+	setcycle 149 target dime
+	setcycle 150 category nonword
+	setcycle 150 target gots
+	setcycle 151 category nonword
+	setcycle 151 target reak
+	setcycle 152 category nonword
+	setcycle 152 target abow
+	setcycle 153 category nonword
+	setcycle 153 target gabs
+	setcycle 154 category nonword
+	setcycle 154 target donk
+	setcycle 155 category nonword
+	setcycle 155 target bumb
+	setcycle 156 category nonword
+	setcycle 156 target dule
+	setcycle 157 category nonword
+	setcycle 157 target gass
+	setcycle 158 category nonword
+	setcycle 158 target glid
+	setcycle 159 category nonword
+	setcycle 159 target lume
+	setcycle 160 category nonword
+	setcycle 160 target pogs
+	setcycle 161 category nonword
+	setcycle 161 target eeks
+	setcycle 162 category nonword
+	setcycle 162 target taze
+	setcycle 163 category nonword
+	setcycle 163 target bame
+	setcycle 164 category nonword
+	setcycle 164 target peap
+	setcycle 165 category nonword
+	setcycle 165 target misk
+	setcycle 166 category nonword
+	setcycle 166 target dimb
+	setcycle 167 category nonword
+	setcycle 167 target dums
+	setcycle 168 category nonword
+	setcycle 168 target sogs
+	setcycle 169 category nonword
+	setcycle 169 target wips
+	setcycle 170 category nonword
+	setcycle 170 target gaft
+	setcycle 171 category nonword
+	setcycle 171 target pood
+	setcycle 172 category nonword
+	setcycle 172 target taxy
+	setcycle 173 category nonword
+	setcycle 173 target tipe
+	setcycle 174 category nonword
+	setcycle 174 target bant
+	setcycle 175 category nonword
+	setcycle 175 target dred
+	setcycle 176 category nonword
+	setcycle 176 target burb
+	setcycle 177 category nonword
+	setcycle 177 target ponk
+	setcycle 178 category nonword
+	setcycle 178 target stur
+	setcycle 179 category nonword
+	setcycle 179 target anom
+	setcycle 180 category nonword
+	setcycle 180 target scub
+	setcycle 181 category nonword
+	setcycle 181 target woot
+	setcycle 182 category nonword
+	setcycle 182 target firt
+	setcycle 183 category nonword
+	setcycle 183 target snay
+	setcycle 184 category nonword
+	setcycle 184 target hern
+	setcycle 185 category nonword
+	setcycle 185 target towl
+	setcycle 186 category nonword
+	setcycle 186 target frim
+	setcycle 187 category nonword
+	setcycle 187 target foke
+	setcycle 188 category nonword
+	setcycle 188 target cown
+	setcycle 189 category nonword
+	setcycle 189 target anst
+	setcycle 190 category nonword
+	setcycle 190 target fies
+	setcycle 191 category nonword
+	setcycle 191 target laso
+	setcycle 192 category nonword
+	setcycle 192 target blop
+	setcycle 193 category nonword
+	setcycle 193 target mobo
+	setcycle 194 category nonword
+	setcycle 194 target muts
+	setcycle 195 category nonword
+	setcycle 195 target pude
+	setcycle 196 category nonword
+	setcycle 196 target glit
+	setcycle 197 category nonword
+	setcycle 197 target poom
+	setcycle 198 category nonword
+	setcycle 198 target ovel
+	setcycle 199 category nonword
+	setcycle 199 target lols
+	setcycle 200 category nonword
+	setcycle 200 target waid
+	setcycle 201 category nonword
+	setcycle 201 target deam
+	setcycle 202 category nonword
+	setcycle 202 target dile
+	setcycle 203 category nonword
+	setcycle 203 target soys
+	setcycle 204 category nonword
+	setcycle 204 target tunk
+	setcycle 205 category nonword
+	setcycle 205 target tike
+	setcycle 206 category nonword
+	setcycle 206 target ogry
+	setcycle 207 category nonword
+	setcycle 207 target gawl
+	setcycle 208 category nonword
+	setcycle 208 target toat
+	setcycle 209 category nonword
+	setcycle 209 target gowl
+	setcycle 210 category nonword
+	setcycle 210 target clut
+	setcycle 211 category nonword
+	setcycle 211 target wead
+	setcycle 212 category nonword
+	setcycle 212 target elve
+	setcycle 213 category nonword
+	setcycle 213 target adle
+	setcycle 214 category nonword
+	setcycle 214 target garl
+	setcycle 215 category nonword
+	setcycle 215 target agur
+	setcycle 216 category nonword
+	setcycle 216 target tuss
+	setcycle 217 category nonword
+	setcycle 217 target dued
+	setcycle 218 category nonword
+	setcycle 218 target darm
+	setcycle 219 category nonword
+	setcycle 219 target voke
+	setcycle 220 category nonword
+	setcycle 220 target prik
+	setcycle 221 category nonword
+	setcycle 221 target brap
+	setcycle 222 category nonword
+	setcycle 222 target tred
+	setcycle 223 category nonword
+	setcycle 223 target purs
+	setcycle 224 category nonword
+	setcycle 224 target anun
+	setcycle 225 category nonword
+	setcycle 225 target baid
+	setcycle 226 category nonword
+	setcycle 226 target ewed
+	setcycle 227 category nonword
+	setcycle 227 target tads
+	setcycle 228 category nonword
+	setcycle 228 target mawl
+	setcycle 229 category nonword
+	setcycle 229 target stut
+	setcycle 230 category nonword
+	setcycle 230 target fint
+	setcycle 231 category nonword
+	setcycle 231 target moam
+	setcycle 232 category nonword
+	setcycle 232 target sout
+	setcycle 233 category nonword
+	setcycle 233 target glea
+	setcycle 234 category nonword
+	setcycle 234 target mift
+	setcycle 235 category nonword
+	setcycle 235 target bisk
+	setcycle 236 category nonword
+	setcycle 236 target caft
+	setcycle 237 category nonword
+	setcycle 237 target elfy
+	setcycle 238 category nonword
+	setcycle 238 target mith
+	setcycle 239 category nonword
+	setcycle 239 target clat
+	setcycle 240 category nonword
+	setcycle 240 target wons
+	setcycle 241 category nonword
+	setcycle 241 target oldy
+	setcycle 242 category nonword
+	setcycle 242 target gell
+	setcycle 243 category nonword
+	setcycle 243 target gurp
+	setcycle 244 category nonword
+	setcycle 244 target rizz
+	setcycle 245 category nonword
+	setcycle 245 target galp
+	setcycle 246 category nonword
+	setcycle 246 target skum
+	setcycle 247 category nonword
+	setcycle 247 target nads
+	setcycle 248 category nonword
+	setcycle 248 target oned
+	setcycle 249 category nonword
+	setcycle 249 target fims
+	setcycle 250 category nonword
+	setcycle 250 target beap
+	setcycle 251 category nonword
+	setcycle 251 target clab
+	setcycle 252 category nonword
+	setcycle 252 target mosy
+	setcycle 253 category nonword
+	setcycle 253 target hids
+	setcycle 254 category nonword
+	setcycle 254 target knat
+	setcycle 255 category nonword
+	setcycle 255 target nuck
+	setcycle 256 category nonword
+	setcycle 256 target ruds
+	setcycle 257 category nonword
+	setcycle 257 target pamp
+	setcycle 258 category nonword
+	setcycle 258 target heff
+	setcycle 259 category nonword
+	setcycle 259 target runk
+	setcycle 260 category nonword
+	setcycle 260 target heam
+	setcycle 261 category nonword
+	setcycle 261 target seak
+	setcycle 262 category nonword
+	setcycle 262 target fows
+	setcycle 263 category nonword
+	setcycle 263 target weat
+	setcycle 264 category nonword
+	setcycle 264 target cick
+	setcycle 265 category nonword
+	setcycle 265 target repy
+	setcycle 266 category nonword
+	setcycle 266 target velt
+	setcycle 267 category nonword
+	setcycle 267 target whea
+	setcycle 268 category nonword
+	setcycle 268 target awks
+	setcycle 269 category nonword
+	setcycle 269 target wize
+	setcycle 270 category nonword
+	setcycle 270 target nune
+	setcycle 271 category nonword
+	setcycle 271 target wafe
+	setcycle 272 category nonword
+	setcycle 272 target nogs
+	setcycle 273 category nonword
+	setcycle 273 target weck
+	setcycle 274 category nonword
+	setcycle 274 target waff
+	setcycle 275 category nonword
+	setcycle 275 target trag
+	setcycle 276 category nonword
+	setcycle 276 target doil
+	setcycle 277 category nonword
+	setcycle 277 target coth
+	setcycle 278 category nonword
+	setcycle 278 target crog
+	setcycle 279 category nonword
+	setcycle 279 target lasp
+	setcycle 280 category nonword
+	setcycle 280 target asop
+	setcycle 281 category nonword
+	setcycle 281 target torm
+	setcycle 282 category nonword
+	setcycle 282 target rits
+	setcycle 283 category nonword
+	setcycle 283 target arge
+	setcycle 284 category nonword
+	setcycle 284 target fown
+	setcycle 285 category nonword
+	setcycle 285 target rens
+	setcycle 286 category nonword
+	setcycle 286 target graw
+	setcycle 287 category nonword
+	setcycle 287 target toos
+	setcycle 288 category nonword
+	setcycle 288 target loap
+	setcycle 289 category nonword
+	setcycle 289 target soal
+	setcycle 290 category nonword
+	setcycle 290 target sark
+	setcycle 291 category nonword
+	setcycle 291 target stug
+	setcycle 292 category nonword
+	setcycle 292 target jits
+	setcycle 293 category nonword
+	setcycle 293 target purt
+	setcycle 294 category nonword
+	setcycle 294 target flot
+	setcycle 295 category nonword
+	setcycle 295 target loar
+	setcycle 296 category nonword
+	setcycle 296 target bips
+	setcycle 297 category nonword
+	setcycle 297 target mewn
+	setcycle 298 category nonword
+	setcycle 298 target hoft
+	setcycle 299 category nonword
+	setcycle 299 target pupe
+	run trial_sequence_1
+
+define sequence block_sequence
+	set flush_keyboard yes
+	set description "A sequence containging a single block of trials followed by feedback to the participant"
+	run block_loop always
+
+define sequence block_sequence_1
+	set flush_keyboard yes
+	set description "A sequence containging a single block of trials followed by feedback to the participant"
+	run block_loop_1 always
+
+define inline_script counterbalance
+	set description "Executes Python code"
+	___run__
+	############################################################
+	# CREATE BLOCK LOOP FOR EXPERIMENTAL LOOP
+	############################################################
+	# Set the values for variables category and target
+	
+	# import the datamatrix library, specifically the function DataMatrix
+	from datamatrix import DataMatrix
+	
+	# create a datamatrix object with 4 rows
+	dm = DataMatrix(length=6)
+	
+	dm.target = 'apple', 'ipple', 'turtle', 'ourtel', 'magic', 'mogac'
+	dm.category = 'word', 'nonword', 'word', 'nonword', 'word', 'nonword'
+	
+	#print(dm)
+	
+	
+	# set the values for the variable correct_response
+	dm.correct_response = nonword_response
+	dm.correct_response[dm.category == 'word'] = word_response
+	
+	# double the number of trials
+	dc = dm << dm
+	
+	############################################################
+	# PSEUDORANDOMIZE ORDER
+	############################################################
+	
+	from pseudorandom import Enforce, MaxRep, MinDist
+	
+	# make it in to an Enforce object
+	ef = Enforce(dc)
+	
+	ef.add_constraint(MaxRep, cols=[dc.category], maxrep=3)
+	ef.add_constraint(MinDist, cols=[dc.target], mindist=5)
+	
+	dm2 = ef.enforce()
+	
+	############################################################
+	# SET OUR DATAMATRIX VARIABLES FOR THE EXPERIMENTAL BLOCK_LOOP
+	############################################################
+	
+	# set a ticker
+	r_ticker = 0
+	
+	for row in dm2:
+		a_trial = row
+		exp.set('exp_category_%i' % r_ticker, a_trial['category'])
+		exp.set('exp_target_%i' % r_ticker, a_trial['target'])
+		exp.set('exp_correct_response_%i' % r_ticker, a_trial['correct_response'])
+		r_ticker = r_ticker+1
+		
+	#####################################################
+	# CREATE CUSTOM LOGGER FILE
+	#####################################################
+	
+	
+	# import the csv module which we will use to create and write to a new csv file
+	import csv
+	
+	# need to have the subject name as a string variable
+	subj = str(var.subject_nr)
+	
+	# determine what folder the current experiment is in, call it "path"
+	# IMPORTANT! UPDATE THIS TO YOUR TUTORIAL FOLDER, OR WHEREVER FOLDER YOUR EXPERIMENT IS IN
+	path = "C:\\Users\\user\\Documents\\TU_Dortmund\\Labor\\Tutorials\\Lexical Decision Template\\"
+	
+	# create a name for the csv file we will create, and using path to specify where it will be saved
+	log_file = path + subj + '_sum_log.csv'
+	
+	# Open 'log_file'
+	with open(log_file, 'wb') as csvfile:
+		filewriter = csv.writer(csvfile, delimiter=',',
+								quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	# in the next line, we specify the names of the columns of variables that we want in our log file
+		filewriter.writerow(['subject', 'category', 'target', 'accuracy', 'rt', 'key_pressed', 'nonword_response', 'word_response', 'trial']) # write column head
+	__end__
+	___prepare__
+	############################################################
+	# COUNTERBALANCING
+	############################################################
+	# Set the button press assignment for words and non-words
+	
+	
+	# Comment out the following line until we're ready to run the experiment. This line takes the typed in subject number and converts it to a "var." variable to be used in the Open Sesame environment. We don't want to use that yet, because we won't be able to run our code!
+	sub_num = var.subject_nr
+	#sub_num = 999
+	
+	if sub_num%2 == 1:
+		word_response = 'z'
+		nonword_response = 'm'
+	else:
+		word_response = 'm'
+		nonword_response = 'z' 
+		
+	var.word_response = word_response
+	var.nonword_response = nonword_response
+	__end__
+
+define sketchpad end_of_practice
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="The practice phase is finished.<br />The real experiment will start now.<br /><br />Press any key to continue." x=0 y=0 z_index=0
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run instructions always
+	run practice_loop always
+	run end_of_practice always
+	run experimental_loop_1 always
+	run goodbye always
+
+define loop experimental_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order random
+	set offset no
+	set item block_sequence
+	set description "A loop containing one or more practice blocks"
+	set cycles 1
+	set continuous no
+	set column_order practice
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 practice no
+	run block_sequence
+
+define loop experimental_loop_1
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order random
+	set offset no
+	set item block_sequence
+	set description "A loop containing one or more practice blocks"
+	set cycles 1
+	set continuous no
+	set column_order practice
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 practice no
+	run block_sequence_1
+
+define feedback feedback
+	set reset_variables yes
+	set duration keypress
+	set description "Provides feedback to the participant"
+	draw textline center=1 color=white font_bold=no font_family=sans font_italic=no font_size=32 html=yes show_if=always text="End of block [=var.count_block_sequence+1]<br /><br />Your average response time was [avg_rt] ms<br />Your accuracy was [acc] %<br /><br />Press any key to continue" x=0 y=0 z_index=0
+
+define feedback feedback_1
+	set reset_variables yes
+	set duration keypress
+	set description "Provides feedback to the participant"
+	draw textline center=1 color=white font_bold=no font_family=sans font_italic=no font_size=32 html=yes show_if=always text="End of block [=var.count_block_sequence+1]<br /><br />Your average response time was [avg_rt] ms<br />Your accuracy was [acc] %<br /><br />Press any key to continue" x=0 y=0 z_index=0
+
+define sketchpad fixation
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad fixation_1
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad goodbye
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="The experiment is finished<br />Thank you for participating<br /><br />Press any key to exit" x=0 y=0 z_index=0
+
+define sketchpad green_fix
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=green penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=green penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad green_fix_1
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=green penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=green penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad instructions
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="Instructions<br /><br /><br />You will see strings of letters<br />Your task is to say whether these letters form a word or not<br /><br />If the letters form a word, press 'm'<br />If the letters do not form a word, press 'z'<br /><br />Examples<br /><br /><span style='mono'>apple</span> is a word, so you press 'm'<br /><span style='mono'>ipple</span> is not a word, so you press 'z'<br /><br /><br />Press a key to start practice" x=0 y=0 z_index=0
+
+define keyboard_response keyboard_response
+	set timeout 5000
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set correct_response m
+	set allowed_responses "z;m"
+
+define keyboard_response keyboard_response_1
+	set timeout 5000
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set correct_response m
+	set allowed_responses "z;m"
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define logger logger_1
+	set description "Logs experimental data"
+	set auto_log yes
+
+define inline_script new_inline_script
+	set description "Executes Python code"
+	___run__
+	# define each of the variables we want
+	# select the current row (count_trial_sequence_1) of our block_loop_1 (dm2)
+	# and give the corresponding variable
+	
+	Category = dm2[var.count_trial_sequence_1].category# word/nonword
+	Target = dm2[var.count_trial_sequence_1].target # target word
+	Accuracy = var.correct # accuracy of participant answer
+	rt = var.response_time # reaction time
+	key_pressed = var.response_keyboard_response_1 # key pressed, 'm' or 'z'
+	nonword_key = var.nonword_response # response key for nonwords
+	word_key = var.word_response # response key for words
+	trial = var.count_trial_sequence_1 # trial number
+	
+	# gather these variables together into one object, te
+	te = [var.subject_nr, Category, Target, Accuracy, rt, key_pressed, nonword_key, word_key, trial]
+	
+	
+	import csv
+	
+	# open the csv file we created in the counterbalance inline script
+	with open(log_file, 'ab') as f:
+		writer = csv.writer(f, delimiter=',',
+								quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	# write the te object to this csv file as the next row
+		writer.writerow(te)
+	__end__
+	set _prepare ""
+
+define logger new_logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define loop practice_loop
+	set source_file ""
+	set source table
+	set skip 0
+	set repeat 1
+	set order random
+	set offset no
+	set item block_sequence
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set column_order practice
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 practice yes
+	run block_sequence
+
+define sketchpad red_fix
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=red penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=red penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad red_fix_1
+	set start_response_interval no
+	set duration 500
+	set description "Displays stimuli"
+	draw line color=red penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=red penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define reset_feedback reset_feedback
+	set description "Resets the feedback variables, such as 'avg_rt' and 'acc'"
+
+define reset_feedback reset_feedback_1
+	set description "Resets the feedback variables, such as 'avg_rt' and 'acc'"
+
+define sequence trial_sequence
+	set flush_keyboard yes
+	set description "A single trial"
+	run word always
+	run keyboard_response always
+
+define sequence trial_sequence_1
+	set flush_keyboard yes
+	set description "A single trial"
+	run word_1 always
+	run keyboard_response_1 always
+	run new_logger always
+
+define sketchpad word
+	set start_response_interval no
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=42 html=yes show_if=always text="[target]" x=0 y=0 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+
+define sketchpad word_1
+	set start_response_interval no
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="[target]" x=0 y=0 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=-32 y2=-32 z_index=0
+	draw line color=white penwidth=2 show_if=always x1=-32 x2=32 y1=32 y2=32 z_index=0
+

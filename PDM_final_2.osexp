@@ -1,0 +1,639 @@
+---
+API: 2.1
+OpenSesame: 3.3.14
+Platform: nt
+---
+set width 1980
+set uniform_coordinates yes
+set title PDM_3
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set psychopy_waitblanking yes
+set psychopy_monitor testMonitor
+set mouse_backend xpyriment
+set keyboard_backend legacy
+set height 1080
+set fullscreen no
+set form_clicks no
+set foreground "#000000"
+set font_underline no
+set font_size 64
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:\\Users\\stefa\\OneDrive\\Documents\\UNI\\YEAR 3\\II\\Thesis\\experiments\\PDM"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend xpyriment
+set background "#ffffff"
+
+define sketchpad break_1
+	set duration 2000
+	set description "Displays stimuli"
+
+define sketchpad break_1_1
+	set duration 2000
+	set description "Displays stimuli"
+
+define sketchpad end_of_practice
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="That was the end of the practice trials. <br /><br />Now the actual trials will begin.<br /><br />Press any key to proceed" x=0 y=0 z_index=0
+
+define loop exp_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 practice no
+	run exp_sequence
+
+define sequence exp_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run pre_break always
+	run exp_words_loop always
+	run new_sketchpad_1 always
+
+define loop exp_words_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 150
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 word with
+	setcycle 1 word been
+	setcycle 2 word also
+	setcycle 3 word made
+	setcycle 4 word such
+	setcycle 5 word went
+	setcycle 6 word says
+	setcycle 7 word told
+	setcycle 8 word area
+	setcycle 9 word able
+	setcycle 10 word road
+	setcycle 11 word gave
+	setcycle 12 word thus
+	setcycle 13 word lost
+	setcycle 14 word data
+	setcycle 15 word wife
+	setcycle 16 word soon
+	setcycle 17 word news
+	setcycle 18 word feet
+	setcycle 19 word sent
+	setcycle 20 word loss
+	setcycle 21 word fell
+	setcycle 22 word huge
+	setcycle 23 word gets
+	setcycle 24 word rock
+	setcycle 25 word tend
+	setcycle 26 word soft
+	setcycle 27 word cell
+	setcycle 28 word shut
+	setcycle 29 word laws
+	setcycle 30 word rare
+	setcycle 31 word lots
+	setcycle 32 word desk
+	setcycle 33 word glad
+	setcycle 34 word bush
+	setcycle 35 word eggs
+	setcycle 36 word weak
+	setcycle 37 word bits
+	setcycle 38 word tank
+	setcycle 39 word beer
+	setcycle 40 word luck
+	setcycle 41 word aunt
+	setcycle 42 word moon
+	setcycle 43 word tied
+	setcycle 44 word poem
+	setcycle 45 word zero
+	setcycle 46 word poet
+	setcycle 47 word shed
+	setcycle 48 word tale
+	setcycle 49 word asks
+	setcycle 50 word tide
+	setcycle 51 word neat
+	setcycle 52 word dish
+	setcycle 53 word lily
+	setcycle 54 word gang
+	setcycle 55 word lads
+	setcycle 56 word quid
+	setcycle 57 word fled
+	setcycle 58 word oven
+	setcycle 59 word barn
+	setcycle 60 word torn
+	setcycle 61 word pint
+	setcycle 62 word sits
+	setcycle 63 word fame
+	setcycle 64 word fond
+	setcycle 65 word plea
+	setcycle 66 word rode
+	setcycle 67 word knit
+	setcycle 68 word pact
+	setcycle 69 word gaps
+	setcycle 70 word mice
+	setcycle 71 word dirt
+	setcycle 72 word rude
+	setcycle 73 word maid
+	setcycle 74 word lone
+	setcycle 75 word seas
+	setcycle 76 word hats
+	setcycle 77 word brow
+	setcycle 78 word doll
+	setcycle 79 word bind
+	setcycle 80 word sunk
+	setcycle 81 word chef
+	setcycle 82 word rugs
+	setcycle 83 word melt
+	setcycle 84 word calf
+	setcycle 85 word mare
+	setcycle 86 word monk
+	setcycle 87 word dusk
+	setcycle 88 word dole
+	setcycle 89 word pork
+	setcycle 90 word ants
+	setcycle 91 word atom
+	setcycle 92 word oath
+	setcycle 93 word wept
+	setcycle 94 word fade
+	setcycle 95 word rods
+	setcycle 96 word vase
+	setcycle 97 word papa
+	setcycle 98 word alps
+	setcycle 99 word lava
+	setcycle 100 word flee
+	setcycle 101 word jeep
+	setcycle 102 word hens
+	setcycle 103 word loaf
+	setcycle 104 word tram
+	setcycle 105 word gala
+	setcycle 106 word wits
+	setcycle 107 word tier
+	setcycle 108 word hawk
+	setcycle 109 word vans
+	setcycle 110 word gigs
+	setcycle 111 word cute
+	setcycle 112 word sane
+	setcycle 113 word pals
+	setcycle 114 word beak
+	setcycle 115 word cove
+	setcycle 116 word knob
+	setcycle 117 word lids
+	setcycle 118 word helm
+	setcycle 119 word dine
+	setcycle 120 word idol
+	setcycle 121 word auto
+	setcycle 122 word whim
+	setcycle 123 word roam
+	setcycle 124 word dyed
+	setcycle 125 word yoga
+	setcycle 126 word buns
+	setcycle 127 word tubs
+	setcycle 128 word slag
+	setcycle 129 word flea
+	setcycle 130 word lice
+	setcycle 131 word avid
+	setcycle 132 word lobe
+	setcycle 133 word grub
+	setcycle 134 word kilo
+	setcycle 135 word veal
+	setcycle 136 word gent
+	setcycle 137 word cabs
+	setcycle 138 word snob
+	setcycle 139 word lair
+	setcycle 140 word hemp
+	setcycle 141 word prom
+	setcycle 142 word cots
+	setcycle 143 word hunk
+	setcycle 144 word dude
+	setcycle 145 word wham
+	setcycle 146 word slob
+	setcycle 147 word ogre
+	setcycle 148 word spew
+	setcycle 149 word hogs
+	run word_sequence_1
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run welcome always
+	run practice_loop always
+	run end_of_practice always
+	run exp_loop always
+
+define notepad getting_started
+	__note__
+	Welcome to OpenSesame 3.3 "Lentiform Loewenfeld"!
+	If you are new to OpenSesame, it is a good idea to follow one of the tutorials,
+	which can be found on the documentation site:
+	- <http://osdoc.cogsci.nl/>
+	You can also check out the examples. These can be opened via:
+	- Menu -> Tools -> Example experiments.
+	And feel free to ask for help on the forum:
+	- <http://forum.cogsci.nl/>
+	Have fun with OpenSesame!
+	__end__
+	set description "A simple notepad to document your experiment. This plug-in does nothing."
+
+define keyboard_response keyboard_resp_1_practice
+	set timeout "[key_exp_1]"
+	set flush no
+	set event_type keypress
+	set duration keypress
+	set description ""
+	set correct_response SPACE
+	set allowed_responses SPACE
+
+define keyboard_response keyboard_resp_1_practice_1
+	set timeout "[key_exp_1]"
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description ""
+	set correct_response SPACE
+	set allowed_responses SPACE
+
+define keyboard_response keyboard_response_2_practice
+	set timeout "[key_exp_2]"
+	set flush no
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set correct_response SPACE
+	set allowed_responses SPACE
+
+define keyboard_response keyboard_response_2_practice_1
+	set timeout "[key_exp_2]"
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set correct_response SPACE
+	set allowed_responses SPACE
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+	log response_time_keyboard_response_1_practice
+	log response_time_keyboard_response_2_practice
+
+define logger logger_2
+	set description "Logs experimental data"
+	set auto_log yes
+	log response_time_keyboard_response_1_practice
+	log response_time_keyboard_response_2_practice
+
+define sketchpad mask_1
+	set duration "[exposure_mask]"
+	set description mask_practice
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="####" x=0 y=0 z_index=0
+
+define sketchpad mask_2
+	set duration "[exposure_mask]"
+	set description mask_practice
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="####" x=0 y=0 z_index=0
+
+define sketchpad mask_pre
+	set duration 1000
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="####" x=0 y=0 z_index=0
+
+define sketchpad new_sketchpad
+	set duration keypress
+	set description "Displays stimuli"
+
+define sketchpad new_sketchpad_1
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="That was the end of the experiment. <br />Press any key to exit." x=0 y=0 z_index=0
+
+define loop practice_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 practice yes
+	run practice_sequence
+
+define sequence practice_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run pre_break always
+	run words_loop always
+
+define sketchpad pre_break
+	set duration 2000
+	set description "Displays stimuli"
+
+define loop trial_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 15
+	set continuous no
+	set break_if_on_first no
+	set break_if "[correct] = 1"
+	setcycle 0 exposure_word 1
+	setcycle 0 exposure_mask 1
+	setcycle 0 time_trial 0
+	setcycle 0 key_exp_2 989
+	setcycle 0 key_exp_1 9
+	setcycle 0 actual_exposure 10
+	setcycle 1 exposure_word 1
+	setcycle 1 exposure_mask 1
+	setcycle 1 time_trial 1
+	setcycle 1 key_exp_2 979
+	setcycle 1 key_exp_1 19
+	setcycle 1 actual_exposure 20
+	setcycle 2 exposure_word 1
+	setcycle 2 exposure_mask 1
+	setcycle 2 time_trial 2
+	setcycle 2 key_exp_2 969
+	setcycle 2 key_exp_1 29
+	setcycle 2 actual_exposure 30
+	setcycle 3 exposure_word 1
+	setcycle 3 exposure_mask 1
+	setcycle 3 time_trial 3
+	setcycle 3 key_exp_2 959
+	setcycle 3 key_exp_1 39
+	setcycle 3 actual_exposure 40
+	setcycle 4 exposure_word 1
+	setcycle 4 exposure_mask 1
+	setcycle 4 time_trial 4
+	setcycle 4 key_exp_2 949
+	setcycle 4 key_exp_1 49
+	setcycle 4 actual_exposure 50
+	setcycle 5 exposure_word 1
+	setcycle 5 exposure_mask 1
+	setcycle 5 time_trial 5
+	setcycle 5 key_exp_2 939
+	setcycle 5 key_exp_1 59
+	setcycle 5 actual_exposure 60
+	setcycle 6 exposure_word 1
+	setcycle 6 exposure_mask 1
+	setcycle 6 time_trial 6
+	setcycle 6 key_exp_2 929
+	setcycle 6 key_exp_1 69
+	setcycle 6 actual_exposure 70
+	setcycle 7 exposure_word 1
+	setcycle 7 exposure_mask 1
+	setcycle 7 time_trial 7
+	setcycle 7 key_exp_2 919
+	setcycle 7 key_exp_1 79
+	setcycle 7 actual_exposure 80
+	setcycle 8 exposure_word 1
+	setcycle 8 exposure_mask 1
+	setcycle 8 time_trial 8
+	setcycle 8 key_exp_2 909
+	setcycle 8 key_exp_1 89
+	setcycle 8 actual_exposure 90
+	setcycle 9 exposure_word 1
+	setcycle 9 exposure_mask 1
+	setcycle 9 time_trial 9
+	setcycle 9 key_exp_2 899
+	setcycle 9 key_exp_1 99
+	setcycle 9 actual_exposure 100
+	setcycle 10 exposure_word 1
+	setcycle 10 exposure_mask 1
+	setcycle 10 time_trial 10
+	setcycle 10 key_exp_2 889
+	setcycle 10 key_exp_1 109
+	setcycle 10 actual_exposure 110
+	setcycle 11 exposure_word 1
+	setcycle 11 exposure_mask 1
+	setcycle 11 time_trial 11
+	setcycle 11 key_exp_2 879
+	setcycle 11 key_exp_1 119
+	setcycle 11 actual_exposure 120
+	setcycle 12 exposure_word 1
+	setcycle 12 exposure_mask 1
+	setcycle 12 time_trial 12
+	setcycle 12 key_exp_2 869
+	setcycle 12 key_exp_1 129
+	setcycle 12 actual_exposure 130
+	setcycle 13 exposure_word 1
+	setcycle 13 exposure_mask 1
+	setcycle 13 time_trial 13
+	setcycle 13 key_exp_2 859
+	setcycle 13 key_exp_1 139
+	setcycle 13 actual_exposure 140
+	setcycle 14 exposure_word 1
+	setcycle 14 exposure_mask 1
+	setcycle 14 time_trial 14
+	setcycle 14 key_exp_2 849
+	setcycle 14 key_exp_1 149
+	setcycle 14 actual_exposure 150
+	run trial_sequence
+
+define loop trial_loop_1
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 15
+	set continuous no
+	set break_if_on_first no
+	set break_if "[correct] = 1"
+	setcycle 0 exposure_word 1
+	setcycle 0 exposure_mask 1
+	setcycle 0 time_trial 0
+	setcycle 0 key_exp_2 989
+	setcycle 0 key_exp_1 9
+	setcycle 0 actual_exposure 10
+	setcycle 1 exposure_word 1
+	setcycle 1 exposure_mask 1
+	setcycle 1 time_trial 1
+	setcycle 1 key_exp_2 979
+	setcycle 1 key_exp_1 19
+	setcycle 1 actual_exposure 20
+	setcycle 2 exposure_word 1
+	setcycle 2 exposure_mask 1
+	setcycle 2 time_trial 2
+	setcycle 2 key_exp_2 969
+	setcycle 2 key_exp_1 29
+	setcycle 2 actual_exposure 30
+	setcycle 3 exposure_word 1
+	setcycle 3 exposure_mask 1
+	setcycle 3 time_trial 3
+	setcycle 3 key_exp_2 959
+	setcycle 3 key_exp_1 39
+	setcycle 3 actual_exposure 40
+	setcycle 4 exposure_word 1
+	setcycle 4 exposure_mask 1
+	setcycle 4 time_trial 4
+	setcycle 4 key_exp_2 949
+	setcycle 4 key_exp_1 49
+	setcycle 4 actual_exposure 50
+	setcycle 5 exposure_word 1
+	setcycle 5 exposure_mask 1
+	setcycle 5 time_trial 5
+	setcycle 5 key_exp_2 939
+	setcycle 5 key_exp_1 59
+	setcycle 5 actual_exposure 60
+	setcycle 6 exposure_word 1
+	setcycle 6 exposure_mask 1
+	setcycle 6 time_trial 6
+	setcycle 6 key_exp_2 929
+	setcycle 6 key_exp_1 69
+	setcycle 6 actual_exposure 70
+	setcycle 7 exposure_word 1
+	setcycle 7 exposure_mask 1
+	setcycle 7 time_trial 7
+	setcycle 7 key_exp_2 919
+	setcycle 7 key_exp_1 79
+	setcycle 7 actual_exposure 80
+	setcycle 8 exposure_word 1
+	setcycle 8 exposure_mask 1
+	setcycle 8 time_trial 8
+	setcycle 8 key_exp_2 909
+	setcycle 8 key_exp_1 89
+	setcycle 8 actual_exposure 90
+	setcycle 9 exposure_word 1
+	setcycle 9 exposure_mask 1
+	setcycle 9 time_trial 9
+	setcycle 9 key_exp_2 899
+	setcycle 9 key_exp_1 99
+	setcycle 9 actual_exposure 100
+	setcycle 10 exposure_word 1
+	setcycle 10 exposure_mask 1
+	setcycle 10 time_trial 10
+	setcycle 10 key_exp_2 889
+	setcycle 10 key_exp_1 109
+	setcycle 10 actual_exposure 110
+	setcycle 11 exposure_word 1
+	setcycle 11 exposure_mask 1
+	setcycle 11 time_trial 11
+	setcycle 11 key_exp_2 879
+	setcycle 11 key_exp_1 119
+	setcycle 11 actual_exposure 120
+	setcycle 12 exposure_word 1
+	setcycle 12 exposure_mask 1
+	setcycle 12 time_trial 12
+	setcycle 12 key_exp_2 869
+	setcycle 12 key_exp_1 129
+	setcycle 12 actual_exposure 130
+	setcycle 13 exposure_word 1
+	setcycle 13 exposure_mask 1
+	setcycle 13 time_trial 13
+	setcycle 13 key_exp_2 859
+	setcycle 13 key_exp_1 139
+	setcycle 13 actual_exposure 140
+	setcycle 14 exposure_word 1
+	setcycle 14 exposure_mask 1
+	setcycle 14 time_trial 14
+	setcycle 14 key_exp_2 849
+	setcycle 14 key_exp_1 149
+	setcycle 14 actual_exposure 150
+	run trial_sequence_1
+
+define sequence trial_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run word_practice always
+	run keyboard_resp_1_practice always
+	run mask_2 always
+	run keyboard_response_2_practice always
+
+define sequence trial_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run word_practice_1 always
+	run keyboard_resp_1_practice_1 always
+	run mask_1 always
+	run keyboard_response_2_practice_1 always
+	run logger always
+
+define sketchpad welcome
+	set start_response_interval no
+	set reset_variables no
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text=Instructions x=0 y=-320 z_index=0
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="You will be presented with a quick flash of a word followed by a mask. <br /><br /><br />Press and HOLD the SPACEBAR button <br />once you can correctly identify the word. " x=0 y=-104 z_index=0
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="There will be 20 practice rounds to help you get accustomed to the environment.<br />" x=0 y=160 z_index=0
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="Press any key to start." x=0 y=256 z_index=0
+
+define sketchpad word_practice
+	set duration "[exposure_word]"
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="[word]<br />" x=0 y=0 z_index=0
+
+define sketchpad word_practice_1
+	set duration "[exposure_word]"
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=no font_family=mono font_italic=no font_size=64 html=yes show_if=always text="[word]<br />" x=0 y=0 z_index=0
+
+define sequence word_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run mask_pre always
+	run trial_loop always
+	run break_1 always
+
+define sequence word_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run mask_pre always
+	run trial_loop_1 always
+	run break_1_1 always
+
+define loop words_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 20
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 word glum
+	setcycle 1 word goth
+	setcycle 2 word gust
+	setcycle 3 word hags
+	setcycle 4 word hobs
+	setcycle 5 word hulk
+	setcycle 6 word gyps
+	setcycle 7 word kilt
+	setcycle 8 word kiwi
+	setcycle 9 word leek
+	setcycle 10 word loom
+	setcycle 11 word lurk
+	setcycle 12 word lush
+	setcycle 13 word lynx
+	setcycle 14 word mane
+	setcycle 15 word node
+	setcycle 16 word oaks
+	setcycle 17 word oars
+	setcycle 18 word prat
+	setcycle 19 word quay
+	run word_sequence
+

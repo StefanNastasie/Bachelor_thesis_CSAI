@@ -11,6 +11,13 @@ Dataset_generator is used for generating the stimuli for the PRPC task
 
 word_extraction_updated is used for sampling the words used for the experiments.
 
+analysis.r is the R analysis done for the first submission
+
+Analysis_new.r is the R analysis done for the second submission
+
+LD.r is the separate analysis done for the Lexical Decision task for the second submission
+
+
 
 #Versions
 
